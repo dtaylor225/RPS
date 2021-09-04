@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Rock, Paper , Scissors Game</title>
+  </head>
+  <body>
+    <div>
+      <h1>Rock 🪨 Paper 📰 Scissors ✂️</h1>
+    </div>
+    <div class="sel">
+      <label for="options">How many rounds won until a winner?: </label>
+      <select name="options" id="options">
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button class="btn btn-rounds">Select</button>
+    </div>
+
+    <main>
+      <div class="section players">
+        <!-- <div class="row"> -->
+        <div class="col span_1_of_2 player-h">
+          <h2>Human</h2>
+          <label for="options">Select Rock, Paper, or Scissors: </label>
+          <select name="options" id="options">
+            <option value="None Selected" selected>None Selected</option>
+            <option value="Rock">Rock</option>
+            <option value="Paper">Paper</option>
+            <option value="Scissors">Scissors</option>
+          </select>
+          <button class="btn btn-choice">Select</button>
+          <p class="score-h">Score: 0</p>
+        </div>
+
+        <div class="col span_1_of_2 player-a">
+          <h2>Enemy AI</h2>
+          <p>Will pick 🪨 📰 ✂️ randomly</p>
+          <p class="score-a">Score: 0</p>
+        </div>
+        <!-- </div> -->
+      </div>
+      <div class="progress">
+        <p></p>
+      </div>
+      <div id="track">
+        <h2>Select number of rounds</h2>
+      </div>
+      <div class="reset">
+        <button class="btn btn-reset">Tap to reset</button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

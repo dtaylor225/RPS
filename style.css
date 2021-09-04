@@ -1,0 +1,95 @@
+* {
+  text-align: center;
+  background-color: rgb(77, 6, 6);
+  color: rgb(240, 240, 240);
+  font-family: Helvetica Neue;
+  box-sizing: border-box;
+}
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+.players:before,
+.players:after {
+  content: "";
+  display: table;
+}
+.players:after {
+  clear: both;
+}
+.players {
+  zoom: 1; /* For IE 6/7 */
+}
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+  width: 100%;
+}
+.span_1_of_2 {
+  width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .span_2_of_2,
+  .span_1_of_2 {
+    width: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: #243aff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 2px 2px 5px #6200ff;
+}
+
+.btn:hover,
+.btn:active {
+  color: #000;
+  background-color: #d5daff;
+  box-shadow: 2px 2px 5px #74fcbc;
+}
+
+.btn-reset {
+  margin-top: 10px;
+}
+
+.sel select,
+.player-h select {
+  margin: 0 10px;
+  background-color: azure;
+  color: #000;
+}
+
+.track {
+  font-size: medium;
+}
